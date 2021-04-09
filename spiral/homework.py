@@ -1,4 +1,7 @@
 def spiralize(number):
-    return_value = 1
+    d = (number - 1) // 2
+    return (16 * d * d * d + 30 * d * d + 26 * d + 3) // 3
 
-    return return_value
+
+number = int(raw_input("Enter number: "))
+print spiralize(number)
